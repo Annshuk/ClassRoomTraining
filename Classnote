@@ -145,3 +145,26 @@ localhost:8080/demo/add?name=First&email=someemail@someemailprovider.com
 ?make=Hyundai&model=accent&year=2011
 
 go to bin (D:\SumanBarman\Tools\mysql-5.6.24-winx64\bin) -> start mysqld -> mysql 
+
+Git Commands
+------------------
+sumbarma@DIN55001727 MINGW64 /d/SumanBarman/Demos
+$ git init
+
+sumbarma@DIN55001727 MINGW64 /d/SumanBarman/Demos (master)
+$ git remote add origin https://github.com/sumanbarman/ClassRoomTraining.git
+
+sumbarma@DIN55001727 MINGW64 /d/SumanBarman/Demos (master)
+$ git add *.*
+
+sumbarma@DIN55001727 MINGW64 /d/SumanBarman/Demos (master)
+$ git commit -m "Adding projects"
+
+sumbarma@DIN55001727 MINGW64 /d/SumanBarman/Demos (master)
+$ git push origin master
+
+For adding new folder/files
+sumbarma@DIN55001727 MINGW64 /d/SumanBarman/Demos (master)
+$ git add ./blog-microservices-2/*
+
+
