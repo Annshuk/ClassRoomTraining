@@ -161,6 +161,9 @@ sumbarma@DIN55001727 MINGW64 /d/SumanBarman/Demos (master)
 $ git commit -m "Adding projects"
 
 sumbarma@DIN55001727 MINGW64 /d/SumanBarman/Demos (master)
+$ git pull origin master
+
+sumbarma@DIN55001727 MINGW64 /d/SumanBarman/Demos (master)
 $ git push origin master
 
 For adding new folder/files
