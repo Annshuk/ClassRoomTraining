@@ -1,0 +1,147 @@
+-------- 
+ Issues
+--------
+a. Session started at 10:30
+b. Projector was not there.
+
+
+------------------
+ Training Details
+------------------
+
+1. Microservices
+	Independent 
+	Architectural Pattern
+
+  	6 Principals
+		a. Business Domain Centric 	- Focused on Functionality only
+						- Service represents business function
+						- Scope of service
+						- Bounded context from DDD
+						- Identify boundaries\seams
+						- Shuffle code if required
+							a. Group related code into a service
+							b. Aim for high cohesion
+						- Responsive to business change
+		
+		b. Autonomous			- Generic Term; REST API/Messaging
+						- Loose Coupling.
+						- Stateless. 
+						- Independently changeable
+						- Independently deployable
+						- Backwards compatible
+						- Concurrent development
+						- Ref: https://developer.paypal.com/docs/api/payments/
+		
+		c. High Cohesion		- Single focus
+						- Single responsibility
+							a. SOLID principle
+							b. Only change for one reason
+						- Reason represents
+							a. A business function
+							b. A business domain
+						- Encapsulation principle
+							a. OOP principle
+						- Easily rewritable code
+						- Why
+							a. Scalability
+							b. Flexibility
+							c. Reliability	
+		
+		d. Resilience			- Embrace failure 
+							a. Another service
+							b. Specific connection
+							c. Third-party system
+						- Degrade functionality
+						- Default functionality
+						- Multiple instances
+							a. Register on startup
+							b. Deregister on failure
+						- Types of failure
+							a. Exceptions\Errors
+							b. Delays
+							c. Unavailability
+						- Network issues
+							a. Delay
+							b. Unavailability
+						- Validate input
+							a. Service to service
+							b. Client to service
+		
+		e. Obervable			- System Health
+						- Centralized monitoring - AppDynamics
+						- Centralized logging - Splunk, ELK Stacks
+						- Why
+							a. Distributed transactions
+							b. Quick problem solving
+							c. Quick deployment requires feedback
+							d. Data used for capacity planning
+							e. Data used for scaling
+							f. Whats actually used
+							g. Monitor business data
+						
+	
+		f. Automation			- Tools to reduce testing
+						- Tools to provide quick feedback
+						- Tools to provide quick deployment
+						- Why
+							a. Distributed system
+							b. Multiple instances of services
+							c. Manual integration testing too time consuming
+							d. Manual deployment time consuming and unreliable
+						- Docker Tool - Containerization. Used only by Netflix.
+							      - Artifacts - Docker Images. instead of using jar/war
+							      - Ref: https://hub.docker.com/ 							
+
+2. Spring Boot 
+	* Dustin Schultz
+	* The Framework for a framework
+	* Auto Configuration 	- @EnableAutoConfiguration 
+				- Apply on package level 
+				- @ComponetScan (Either Controller, Normal Beans, Services)
+				- @Configuration
+				- @SpringBootApplication replaces above 3 annotations	
+	* Convention over Configuration
+	* opinionated
+	* Spring Boot is not Spring Boot without Auto Configurations!	
+	* @SpringBootApplication
+	* Reference - https://github.com/abhishek-ghode/vim-codebase
+	
+	
+3. Spring Cloud
+	a. Distributed Application
+	b. Gateway Pattern - ZuulGateway
+	c. Discovery - Eureka
+	d. Externaliztion Configuration - Spring Config
+	e. Load Balancing - Ribbon/Feign
+	f. Why Spring Cloud, Why?? 
+		
+
+4. Distributed Application
+
+5. Vagrant Tool
+	* Go To CMD - vagrant --version
+
+Reference: 
+	https://start.spring.io/
+
+
+
+Session 2 - 20th Feb
+--------------------
+
+Reference
+
+JPA is Specification
+HIbernation is implementation/realization
+
+Appendix of applicatio properties
+https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+
+
+
+localhost:8080/demo/add?name=First&email=someemail@someemailprovider.com
+
+?make=Hyundai&model=accent&year=2011
+
+go to bin (D:\SumanBarman\Tools\mysql-5.6.24-winx64\bin) -> start mysqld -> mysql 
