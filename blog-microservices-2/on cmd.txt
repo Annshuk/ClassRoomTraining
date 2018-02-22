@@ -1,0 +1,4 @@
+set JAVA_HOME=d:\bcpabh\setups\jdk1.8.0_92
+set GRADLE_HOME=D:\dev\tools\gradle-2.13
+set path=%JAVA_HOME%\bin;%GRADLE_HOME%\bin
+gradle --version
